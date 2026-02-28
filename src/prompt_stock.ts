@@ -12,6 +12,7 @@ do{
     switch(op){
         case 0:
             console.log("Saindo...");
+        break;
 
         case 1:
         let adicionar: string = prompt("Digite o produto que deseja adicionar: "); 
