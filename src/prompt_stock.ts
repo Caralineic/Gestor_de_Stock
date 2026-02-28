@@ -7,7 +7,7 @@ let stock: string[] = [];
 
 do{
     op = Number(prompt(
-        "Qual operação deseja executar ? \n [1] Adicionar item \n [2] Listar Itens \n [3] Remover item \n"));
+        "Qual operação deseja executar ?  [1] Adicionar item  [2] Listar Itens [3] Remover item [0] Para sair    "));
 
     switch(op){
         case 0:
@@ -30,7 +30,7 @@ do{
         break;
 
         case 3:
-            let remover = prompt("Qual item deseja remover do estoque ?\n")
+            let remover = prompt("Qual item deseja remover do estoque ?")
             let index = stock.indexOf(remover) 
             //indexof procura o item digitado no vetor e diz a posição dele
 
@@ -45,5 +45,5 @@ do{
         default:
             console.log("Numero invalido!")
 }
-}while(op!=0)
+}while(op!==0)
 
